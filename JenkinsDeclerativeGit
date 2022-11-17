@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+
+
+    stages {
+        stage('Build') {
+            steps {
+               git credentialsId: 'gitcredentials', url: 'https://github.com/midathanasiva/hello-world'
+            }
+
+            
+        }
+    }
+}
